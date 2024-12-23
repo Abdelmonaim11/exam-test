@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="496.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enset.test.MainController">
+<AnchorPane prefHeight="496.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enset.test.Controller.MainController">
     <children>
         <Text fill="#2706e0" layoutX="8.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University management">
             <font>
@@ -71,15 +71,15 @@
                                         <Font name="System Bold" size="12.0" />
                                     </font></Text>
                                 <DatePicker fx:id="dateInput" layoutX="349.0" layoutY="351.0" />
-                                <Button id="blueMonaim" layoutX="539.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#addPatient" prefHeight="25.0" prefWidth="71.0" stylesheets="@stylesheet.css" text="Ajouter">
+                                <Button id="blueMonaim" layoutX="539.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#addPatient" prefHeight="25.0" prefWidth="71.0"  text="Ajouter">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Button>
-                                <Button id="redMonaim" layoutX="623.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#removePatient" prefHeight="25.0" prefWidth="78.0" stylesheets="@stylesheet.css" text="Supprimer">
+                                <Button id="redMonaim" layoutX="623.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#removePatient" prefHeight="25.0" prefWidth="78.0"  text="Supprimer">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Button>
-                                <Button id="blueMonaim" layoutX="720.0" layoutY="349.0" mnemonicParsing="false" onAction="#updateProf" prefHeight="25.0" prefWidth="71.0" stylesheets="@stylesheet.css" text="Modifier">
+                                <Button id="blueMonaim" layoutX="720.0" layoutY="349.0" mnemonicParsing="false" onAction="#updateProf" prefHeight="25.0" prefWidth="71.0"  text="Modifier">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Button>
@@ -116,15 +116,15 @@
                                         <Font name="System Bold" size="12.0" />
                                     </font></Text>
                                 <TextField fx:id="nomDepartementInput" layoutX="418.0" layoutY="223.0" prefHeight="25.0" prefWidth="424.0" />
-                                <Button id="blueMonaim" layoutX="112.0" layoutY="255.0" mnemonicParsing="false" onAction="#addDepartement" prefHeight="25.0" prefWidth="76.0" stylesheets="@stylesheet.css" text="Ajouter">
+                                <Button id="blueMonaim" layoutX="112.0" layoutY="255.0" mnemonicParsing="false" onAction="#addDepartement" prefHeight="25.0" prefWidth="76.0"  text="Ajouter">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Button>
-                                <Button id="redMonaim" layoutX="202.0" layoutY="255.0" mnemonicParsing="false" onAction="#removeDepartement" prefHeight="25.0" prefWidth="85.0" stylesheets="@stylesheet.css" text="Supprimer">
+                                <Button id="redMonaim" layoutX="202.0" layoutY="255.0" mnemonicParsing="false" onAction="#removeDepartement" prefHeight="25.0" prefWidth="85.0"  text="Supprimer">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Button>
-                                <Button id="greenMonaim" layoutX="303.0" layoutY="255.0" mnemonicParsing="false" onAction="#updateDepartement" prefHeight="25.0" prefWidth="86.0" stylesheets="@stylesheet.css" text="Modifier">
+                                <Button id="greenMonaim" layoutX="303.0" layoutY="255.0" mnemonicParsing="false" onAction="#updateDepartement" prefHeight="25.0" prefWidth="86.0"  text="Modifier">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Button>
@@ -153,17 +153,17 @@
                            </font>
                         </Text>
                         <TextField fx:id="nomDepartementInput1" layoutX="418.0" layoutY="223.0" prefHeight="25.0" prefWidth="424.0" />
-                        <Button id="blueMonaim" layoutX="112.0" layoutY="255.0" mnemonicParsing="false" onAction="#addDepartement" prefHeight="25.0" prefWidth="76.0" stylesheets="@stylesheet.css" text="Ajouter">
+                        <Button id="blueMonaim" layoutX="112.0" layoutY="255.0" mnemonicParsing="false" onAction="#addDepartement" prefHeight="25.0" prefWidth="76.0"  text="Ajouter">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button id="redMonaim" layoutX="202.0" layoutY="255.0" mnemonicParsing="false" onAction="#removeDepartement" prefHeight="25.0" prefWidth="85.0" stylesheets="@stylesheet.css" text="Supprimer">
+                        <Button id="redMonaim" layoutX="202.0" layoutY="255.0" mnemonicParsing="false" onAction="#removeDepartement" prefHeight="25.0" prefWidth="85.0"  text="Supprimer">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button id="greenMonaim" layoutX="303.0" layoutY="255.0" mnemonicParsing="false" onAction="#updateDepartement" prefHeight="25.0" prefWidth="86.0" stylesheets="@stylesheet.css" text="Modifier">
+                        <Button id="greenMonaim" layoutX="303.0" layoutY="255.0" mnemonicParsing="false" onAction="#updateDepartement" prefHeight="25.0" prefWidth="86.0" text="Modifier">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>

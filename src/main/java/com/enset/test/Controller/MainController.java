@@ -106,8 +106,8 @@ public class MainController implements Initializable {
         nomPatient.setCellValueFactory(new PropertyValueFactory<>("nom"));
         prenomPatient.setCellValueFactory(new PropertyValueFactory<>("prenom"));
         cinPatient.setCellValueFactory(new PropertyValueFactory<>("cin"));
-        telePatient.setCellValueFactory(new PropertyValueFactory<>("adresse"));
-        emailPatient.setCellValueFactory(new PropertyValueFactory<>("telephon"));
+        telePatient.setCellValueFactory(new PropertyValueFactory<>("telephone"));
+        emailPatient.setCellValueFactory(new PropertyValueFactory<>("email"));
         datenaissPatiet.setCellValueFactory(new PropertyValueFactory<>("date_naissance"));
 
         tablePatients.setItems(patients);
@@ -138,7 +138,9 @@ public class MainController implements Initializable {
 
     @FXML
     void removePatient(MouseEvent event) {
-
+        Patient selectedPatient = tablePatients.getSelectionModel().getSelectedItem();
+        iCabinet.deletePatient(selectedPatient.getId_patient());
+        patients.remove(selectedPatient);
     }
 
     @FXML

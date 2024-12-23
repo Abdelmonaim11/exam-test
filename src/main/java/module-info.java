@@ -7,5 +7,5 @@ module com.enset.test {
     exports com.enset.test;
     opens com.enset.test to javafx.base, javafx.fxml;
     exports com.enset.test.Controller;
-    opens com.enset.test.controller to javafx.base, javafx.fxml;
+    opens com.enset.test.Controller to javafx.base, javafx.fxml;
 }

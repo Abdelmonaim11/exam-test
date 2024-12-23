@@ -26,7 +26,7 @@ public class ICabinetImpl implements ICabinetMetier{
                         res.getString("nom"),
                         res.getString("prenom"),
                         res.getString("cin"),
-                        res.getString("telephon"),
+                        res.getString("telephone"),
                         res.getString("email"),
                         res.getDate("date_naissance")
 
