@@ -1,11 +1,21 @@
 package com.enset.test.entities;
 
 import java.util.Date;
+import java.util.List;
 
 public class Patient {
    private int id_patient;
     private String nom, prenom, cin, telephone, email ;
     private Date date_naissance;
+    private List<Consultation> consultations;
+
+    public List<Consultation> getConsultations() {
+        return consultations;
+    }
+
+    public void setConsultations(List<Consultation> consultations) {
+        this.consultations = consultations;
+    }
 
     public int getId_patient() {
         return id_patient;
@@ -63,14 +73,15 @@ public class Patient {
         this.date_naissance = date_naissance;
     }
 
-    public Patient(String nom, String cin, String prenom, String telephone, String email, Date date_naissance, int id_patient) {
+    public Patient(int id_patient, String nom, String cin, String prenom, String telephone, String email, Date date_naissance) {
+        this.id_patient = id_patient;
         this.nom = nom;
         this.cin = cin;
         this.prenom = prenom;
         this.telephone = telephone;
         this.email = email;
         this.date_naissance = date_naissance;
-        this.id_patient = id_patient;
+
     }
 
     public Patient() {

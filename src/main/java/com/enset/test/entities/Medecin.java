@@ -1,8 +1,19 @@
 package com.enset.test.entities;
 
+import java.util.List;
+
 public class Medecin {
     private int id_medecin;
     private String nom, prenom, email, tel;
+private List<Consultation> consultationsMedecin;
+
+    public List<Consultation> getConsultationsMedecin() {
+        return consultationsMedecin;
+    }
+
+    public void setConsultationsMedecin(List<Consultation> consultationsMedecin) {
+        this.consultationsMedecin = consultationsMedecin;
+    }
 
     public int getId_medecin() {
         return id_medecin;
